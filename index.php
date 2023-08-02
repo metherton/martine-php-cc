@@ -8,7 +8,7 @@ echo "My first actual PHP script!";
 
 $sid = getenv('ACCOUNT_SID');
 $auth_token = getenv('TOKEN');
-
+echo "create client";
 $client = new Twilio\Rest\Client($sid, $token);
 echo $client;
 
