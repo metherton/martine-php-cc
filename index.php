@@ -7,7 +7,7 @@ require __DIR__ . '/twilio-php-main/src/Twilio/autoload.php';
 use Twilio\Rest\Client;
 echo "My first actual PHP script!";
 
-$sid = getenv('ACCOUNT_SID');
+$account_sid = getenv('ACCOUNT_SID');
 $auth_token = getenv('TOKEN');
 echo "create client";
 // A Twilio number you own with Voice capabilities
