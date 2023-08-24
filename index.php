@@ -11,9 +11,9 @@ $account_sid = getenv('ACCOUNT_SID');
 $auth_token = getenv('TOKEN');
 echo "create client";
 // A Twilio number you own with Voice capabilities
-$twilio_number = "+3242776825";
+$twilio_number = getenv('TWILIO_PHONE_NUMBER');
 // Where to make a voice call (your cell phone?)
-$to_number = "+31624543741";
+$to_number = getenv('MARTIN_OUTBOUND');
 
 $client = new Client($account_sid, $auth_token);
 echo $client;
