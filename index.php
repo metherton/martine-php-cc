@@ -5,6 +5,7 @@
 <?php
 require __DIR__ . '/twilio-php-main/src/Twilio/autoload.php';
 use Twilio\Rest\Client;
+phpinfo();
 echo "My first actual PHP script!";
 
 $account_sid = getenv('ACCOUNT_SID');
